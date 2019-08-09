@@ -1,0 +1,346 @@
+Parei na aula 17 do curso
+
+Conceitos {
+    MVP = Fusca -> Uno -> Corolla -> BMW.
+
+    Estrutura de dados: Formas de representar informações/dados.
+
+    Fim
+}
+
+.Net{
+    é um framework que utiliza a linguagem c# para desenvolvimento backend de sistemas web e mobile. A extensão de um arquivo C# é ".cs". Caa sentença de código em C# termina com ";".
+
+    CLR: Common Lenguage Runtime{
+        Converte o código em C# para codigo e máquina para ser lido em Windows, Linux ou MAC (Like a virtual machine)
+    }
+    LIB: Bibliotecas
+
+    Arquitetura da solução(aplicação) .Net{
+        Uma aplicação pode ter 1 ou mais projetos(assembly), que podem gerar um arquivo.exe ou .dll;
+        Uma aplicação C# utiliza namespaces(similar a pacotes em java) e classes (arquivos) dentro de um namespace;
+    }
+}
+
+Visual Studio - C#{
+
+	Configurações e atalhos{
+		ctrl +k +d formata o codigo segundo as suas preferêmcias;
+
+	    para modificar as preferências, vá em: Ferramentas/Opções/Editor de texto/C#/Estilo de código/ Formatação/Novas Linhas;
+
+	    Para executar o programa clique no botão de "Play" da IDE, ou use o atalho ctrl+F5;
+	}    
+
+    Comentário{
+    	Comentário em Bloco ctrl +K +C
+    	des-Comentário em Bloco ctrl +K +U
+    }
+
+    Variaveis{
+
+    	C# é uma inguagem fortemente tipada.
+
+    	'const' é uma palavra reservada que indica que a variável (espaço de memória) não pode ser modificada ao durante a execuçaõ do programa. A variável deve ser inicializada logo na sua declaração, pois seu valor é resolvido em tempo de compilação.
+
+    	Declaração de variaveis{
+    		Modelo: tipo var_nome = valor;
+    		double peso = 4.0;
+    		const double PI = 3.1415;
+    		int idade = 20;
+    		bool estaCerto = true;
+
+    		Por padrão todo numero literal em ponto flutuante (decimal) é double, para forçar um tipo float, defina o valor com a letra 'f' no final.
+    				
+			float numeroFloat = 3.13f;
+			double = 3.14;
+
+			char letra = 'a'; //Aspas simples
+
+			string nome = "Fagner" // aspas duplas
+    	}
+
+    	tipos{
+    		numericos{
+    			ponto flutuante{
+    				float = 4 bytes = 32 bits
+    				double = 8 bytes = 64 bits
+    			}
+
+    			inteiros{
+    				byte = 1 bite = 8 bits
+    				sbyte = vai de -128 a +127
+	    			short = 2 bytes = 16 bites
+	    			int = 4 bytes = 32 bits
+	    			long = 8 bytes = 64 bits
+    			}
+
+    			Um tipo menor cabe em um tipo maior, mas o contrário não é válido.
+    		}
+    	}
+    }
+
+    Inferencia de tipo{
+    	Para declarar uma variável sem um tipo definido, use a palavra reservada 'var'. A variável adquire o tipo adequado conforme o valor que ela recebe. E uma vez o tipo definido, ele não pode ser mais modificado. Variáveis desse tipo dé declaração (implícita) devem ser inicializadas na declaração.
+
+    	Modelo: var nome = valor
+    }
+
+    Interpolação de string{
+    	Alternativa à concatenação de strings com variáveis (aquela que usa o simbolo '+').
+
+    	A sintaxe é parecida com a funcao printf() do C. Mas aqui a sintaxe é a seguinte:
+
+    	Console.WriteLine("O {0}, é o mago mais poderoso de {1}.", nomeDoMago, nomeDoMundo);
+
+    	Exemplo:
+    	Console.WriteLine("O {0}, é o mago mais poderoso de {1}.", nomeDoMago, nomeDoMundo);
+
+    	Cada número entre as chaves representa a ordem em que as variáveis nomeDoMago e nomeDoMundo apareceerão na string.
+
+    	Outra forma é inserir um simbolo sifrão imediatamente antes do abre aspas da string e informar o nome da variavel no lugar dos numeros.
+
+    	Exemplo:
+    	Console.WriteLine($"O {nomeDoMago}, é o mago mais poderoso de {nomeDoMundo}.");
+    }
+
+    Notação ponto '.'{
+    	Denota a utilização de um método. O nome do objeto está à esquerda do ponto e o nome do métdo fica à direita.
+
+    	Exemplo:
+    	"Fagner".ToUpper(); ou
+    	string nome = "Fagner";
+    	nome.ToUpper
+    	Resulta em: FAGNER
+
+    	A notação ponto não funciona em objetos que estão vazios (valor 'null)'.
+
+    	Exemplo: string msg = null;
+    	msg.length não vai funcionar, pois msg não faz referência a nenhum objeto, logo o método length não poderá ser executado, pois ele depende da existência de um objeto. Mas se você adicionar uma interrogacao '?' no final do nome da variável o C# verificará se a variável faz referência a um objeto, antes de chamar o metodo length.
+
+    	Exemplo: msg?.length
+
+    	Isso representa o conceito de navegacao segura. Evitando erros em tempo de compilação e em tempo de execução.
+    }
+
+    Entrada de dados - Via Console{
+    	A leitura de dados pode ser feita pelo comando Console.ReadLine();
+    	Os dados lidos da entrada padrão (texlado), será lido como texto, mesmo números. Logo, os valores numericos lidos devem ser convertidos para o tipo adequado.
+
+    	Exemplo: string nome = Console.ReadLine();
+
+    	Para realizar a conversão explicita de tipo, faça:
+
+    	int idade = int.Parse(Console.ReadLine());
+    }
+
+    Formatação de numeros{
+    	Não tão importante para o momento. Assisti, mas nao fiz quase nada.
+
+    	ok
+    }
+
+    Conversões (de tipo){
+    	A conversão entre numeros é realizada via cast.
+    	cast = (tipo)variável
+
+    	Exemplo: variavelInt = (tipoInteiro)variavelDouble.
+
+    	Exemplo de forma segura de se fazer uma conversão explicita:
+
+    	int.TryParse(Console.ReadLine(), out int numero2);
+    }
+
+    Operadores aritmeticos{
+    	Assisti, mas nao fiz quase nada. Fácil.
+    	+, -, /, %, *.
+    }
+
+    Operadores relacionais{
+    	O resoltado da operação é um valor booleano.
+    	<, >, <=, >=, ==, !=
+    }
+
+    Operadores lógicos 1 e 2{
+    	E lógico: '&&' (binario)
+    	OU lógico || (binario)
+    	Ou Exclusivo '^' (binario)
+        Negação '!' (unario)
+        Proposições diferentes geram resoltados verdadeiros.
+    	Ex.: V^F = V
+
+    	Proposicoes iguais geram resultado falsos. Ex.: V^V = F.
+    }
+
+    Oeradores de atribuicao{
+        a = b;
+        a += b;
+        a -= b;
+        a *= b;
+        a /= b;
+        a++; Usa 'a' e incrementa
+        a--; 
+        ++a; Incrementa e usa 'a'
+        --a;
+
+        ObjetoX obj1 = new ObjetoX();
+
+        ObjetoX obj2 = obj1;
+    }
+
+    Operadores unarios{
+        Trabalha com apenas 1 operando, diferente dos operadores binarios (2 operandos), ou ternários (3 operandos).
+
+        Menos: '-';
+        Negação lógica: '!';
+        Incremento unitario: '++';
+        Decremento unitario: '--';
+    }
+
+    Operadores ternarios{
+        É um operador condicional, relacional e/ou logico.
+
+        OK
+    }
+
+    Estrutura, if else{
+        Ok, muito tranquilo, igual a C++.
+
+        OK
+    }
+
+    Estrutura switch{
+        Recebe um valor numerico como forma de controle.
+
+        Um valor do tipo char também é valido.
+    }
+
+    Estrutura while{
+        So assisti. Igual C++
+
+        OK;
+    }
+
+    Estrutura do while{
+        So assisti, igual a C++
+
+        OK;
+        do{
+            /*something*/
+        }while(condicao);
+    }
+
+    Estrutura for{
+        So assisti, igual ao C++.
+
+        OK;
+    }
+
+    Estrutura foreach{
+        string palavra = "parangaricutirrimirruaru";
+        foreach(var letra in palavra) {
+            Console.Write($"{letra}-");
+        }
+    }
+
+    break{
+        Usado para interromper o fluxo de execução de estruturas de controle no qual ele foi escrito.
+
+        OK;
+    }
+
+    continue{
+        Interrompe o fluxo da iteração atual em uma repetição e parte para a proxima iteracao.
+
+        OK;
+    }
+
+    Conceito de Classes e Objetos{
+        Uma classe é um tipo de dado personalizado.
+
+        Uma classe possui atributos(dados) e comportamentos(métodos).
+
+        Um objeto é uma representação digital de algo do mundo real. e é instanciado através do método construtor da classe.
+
+        Se nenhum construtor for criado, o objeto será instanciado usando o construtor padrao
+    }
+
+    funcao{
+        igualzinho em C++.
+
+        OK;
+    }
+
+    método{
+        É uma função pertencente a uma classe.
+
+        A assinatura de um metodo deve ser única para cada metodo. Logo, não podem haver dois ou mais métodos com o mesmo nome e com parâmetros identicos.
+    }
+
+    metodos estaticos{
+        Metodos estaticos possuem a palavra reservada 'static'.
+
+        Um método estatico é aquele que pode ser utilizado sem a necessidade da existência de um objeto. Ou seja, o método passa a ser um método associado à classe e não mais À instancia de um objeto daquela classe.
+    }
+
+    Palavra reservada 'this'{
+        Palavra reservada para acessar explicitamente atributos de uma instancia de classe.
+
+        Ok.
+    }
+
+    Parametros variaveis e nomeados{
+        Assisti as auals e pratiquei um pouco.
+
+        OK;
+    }
+
+    Propriedades e Getters&Setters{Existem 3 propriedades: public, private e restricted.
+        Realiza o acesso à variáveis protegidas. por private ou restricted.
+
+        Se você não definir o nivel de privacidade do atributo, por padrão ele é privado.
+
+        Rever o conceito de propriedades e set e get, depois p entender melhor. Aula 55.
+    }
+
+    Atributos ReadOnly{
+        a palavra reservada 'readonly' torna o atributo imutável no contexto de execução do programa, mas permite que ele seja inicializado via construtor.
+
+        Ex.: radyonly string sexo;
+
+        Construtor(){
+            string sexo = "meu_sexo";
+        }
+    }
+
+    Enumeracoes{
+        É uma forma de representar informações de forma padronizada.
+
+        A declaracao de uma enumeracao é feita por meio da palavra reservada 'enum'.
+
+        Não se coloca acento nos itens de uma enuneracao. Não gera erro, mas eh padrão. Primeira letra da palavra maiuscula.
+
+        Uma enum pode ser convertida em inteiro via cast. O inteiro gerado é o id da enum.
+    }
+
+    sstructs{
+        Structs possuem atributos, construtor e metodos, assim como implementar interfaces.
+
+        OK;
+    }
+
+    Structs vs Clases{
+        Structs são muito semelhantes à classes, em termos de estrutura e sintaxe. A diferença mais relevante é que um objeto de uma classe deve ser instanciado usando a palavra reservada 'new', uma struct pode ser declarada como se fosse um tipo primitivo.
+
+        As atribuições realizadas de uma struct A para outra struct B, são sempre por VALOR.
+        structB = structA. A structB recebe a copia dos valores que existem nos atributos da structA. Ideal pra ambientes one há programaçõa paralela.
+
+        As atribuições realizadas de uma classe A para outra classe B, são sempre por REFERENCIA.
+        classeA = classeB. A classeB recebe a referencia de memoria da classeA. Logo, ambas apontam para o mesmo endereco (objeto).
+    }
+
+    Parametros por referencia{
+
+    }
+
+}
