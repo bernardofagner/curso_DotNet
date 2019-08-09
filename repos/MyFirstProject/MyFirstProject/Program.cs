@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+
+using CursoCSharp.Fundamentos; //Importa a pasta Fundamentos
+using CursoCSharp.EstruturaDeControle; //Importa a pasta Estrutura de Controle
+using CursoCSharp.ClassesEMetodos;
+
+namespace CursoCSharp {
+    class Program {
+        static void Main(string[] args) {
+            var central = new CentralDeExercicios(new Dictionary<string, Action>() {
+                // Fundamentos
+                {"Primeiro Programa - Fundamentos", PrimeiroPrograma.Executar},
+                {"Comentarios - Fundamentos", Comentarios.Executar},
+                {"Variáveis e Constantes - Fundamentos", VariaveisEConstantes.Executar},
+                {"Inferencia - Fundamentos", Inferencia.Executar},
+                {"Interpolacao de strings - Fundamentos", Interpolacao.Executar},
+                {"Notação ponto - Fundamentos", NotacaoPonto.Executar},
+                {"Lendo dados - Fundamentos", LendoDados.Executar},
+                {"Formatando numeros - Fundamentos", FormatandoNumeros.Executar},
+                {"Conversão de tipos - Fundamentos", Conversoes.Executar},
+                {"Operadores aritmeticos - Fundamentos", OperadoresAritmeticos.Executar},
+                {"Operadores relacionais - Fundamentos", OperadoresRelacionais.Executar},
+                {"Operadores logicos - Fundamentos", OperadoresLogicos.Executar},
+                {"Operadores de atribuicao - Fundamentos", OperadoresAtribuicao.Executar},
+                {"Operadores unarios - Fundamentos", OperadoresUnarios.Executar},
+                {"Operador ternario - Fundamentos", OperadorTernario.Executar},
+
+                // Estruturas de controle
+                {"Estrutura if - Estruturas de controle", EstruturaIf.Executar},
+                {"Estrutura switch - Estruturas de controle", EstruturaSwitch.Executar},
+                {"Estrutura while - Estruturas de controle", EstruturaWhile.Executar},
+                {"Estrutura foreach - Estruturas de controle", EstruturaForEach.Executar},
+                {"Estrutura continue - Estruturas de controle", EstruturaContinue.Executar},
+
+                //Classes e metodos
+                {"Sobre classes - Classes e metodos", SobreClasses.Executar},
+                {"Parametros variaveis - Classes e metodos", ParametrosVariaveis.Executar},
+                {"Parametros nomeados - Classes e metodos", ParametrosNomeados.Executar},
+                {"Atributos readyonly - Classes e metodos", ReadOnly.Executar},
+                {"Enumeracoes - Classes e metodos", Enumeracao.Executar},
+                {"Exemplo struct - Classes e metodos", ExemploStruct.Executar},
+                {"Parametros por referencia - Classes e metodos", ParametrosPorReferencia.Executar},
+            });
+
+            central.SelecionarEExecutar();
+        }
+    }
+}

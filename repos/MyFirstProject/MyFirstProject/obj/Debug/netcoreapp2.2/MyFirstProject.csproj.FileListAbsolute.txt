@@ -1,0 +1,11 @@
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\bin\Debug\netcoreapp2.2\MyFirstProject.deps.json
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\bin\Debug\netcoreapp2.2\MyFirstProject.runtimeconfig.json
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\bin\Debug\netcoreapp2.2\MyFirstProject.runtimeconfig.dev.json
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\bin\Debug\netcoreapp2.2\MyFirstProject.dll
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\bin\Debug\netcoreapp2.2\MyFirstProject.pdb
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\MyFirstProject.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\MyFirstProject.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\MyFirstProject.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\MyFirstProject.AssemblyInfo.cs
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\MyFirstProject.dll
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\MyFirstProject.pdb
