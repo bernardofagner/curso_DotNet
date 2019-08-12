@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using CursoCSharp.Fundamentos; //Importa a pasta Fundamentos
 using CursoCSharp.EstruturaDeControle; //Importa a pasta Estrutura de Controle
 using CursoCSharp.ClassesEMetodos;
+using CursoCSharp.Colecoes;
 
 namespace CursoCSharp {
     class Program {
@@ -41,6 +42,16 @@ namespace CursoCSharp {
                 {"Enumeracoes - Classes e metodos", Enumeracao.Executar},
                 {"Exemplo struct - Classes e metodos", ExemploStruct.Executar},
                 {"Parametros por referencia - Classes e metodos", ParametrosPorReferencia.Executar},
+
+                //Colecoes
+                {"Array - Colecoes", ArrayColecao.Executar},
+                {"List - Colecoes", ListColecao.Executar},
+                {"ArrayList - Colecoes", ArrayListColecoes.Executar},
+                {"Set - Colecoes", SetColecoes.Executar},
+                {"Queue - Colecoes", QueueColecao.Executar},
+                {"Igualdade - Colecoes", IgualdadeColecao.Executar},
+                {"Stack - Colecoes", StackColecao.Executar},
+                {"Dictionary - Colecoes", DictionaryColecao.Executar},
             });
 
             central.SelecionarEExecutar();

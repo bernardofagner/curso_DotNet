@@ -14,6 +14,7 @@ Conceitos {
     CLR: Common Lenguage Runtime{
         Converte o código em C# para codigo e máquina para ser lido em Windows, Linux ou MAC (Like a virtual machine)
     }
+
     LIB: Bibliotecas
 
     Arquitetura da solução(aplicação) .Net{
@@ -30,6 +31,8 @@ Visual Studio - C#{
 	    para modificar as preferências, vá em: Ferramentas/Opções/Editor de texto/C#/Estilo de código/ Formatação/Novas Linhas;
 
 	    Para executar o programa clique no botão de "Play" da IDE, ou use o atalho ctrl+F5;
+
+        ctrl + ponto_final abre um menu de atalos para gerar construtores e outras coisas.
 	}    
 
     Comentário{
@@ -340,7 +343,67 @@ Visual Studio - C#{
     }
 
     Parametros por referencia{
+        Assisti na aula 61. Implmentei na classe ParametrosPorReferencia.
 
+        OK;
     }
+
+    Valor padrao para metodos{
+        public int EscolheNome(string nome = "indigente"){/*codigo*/}
+
+        O exemplo acima demonstra que se nao fir imformado um parametro do tipo string com o valor para a variavel 'nome', ela recebe o valor "indigente".
+
+        Caso a funcao espere mais de um parametro, pode-se usar parametros nomeaveis para escolher qual você quer passar. Esta funcionalidade nao esta disponivel para ser usada com as palavras reservadas 'ref' ou 'out'.
+    }
+
+    Coleções - Aula 63{
+        São estruturas de dados capazes de armazenar diversas instancias de um (ou mais) tipo de dados.
+    }
+
+    Arrays - Aula 63{
+        Estrutura indexada, a partir do indice 0 e homogênia e, logo não é possivel misturar mais de um tipo de dado em um array. Um array não pode ter seu tamanho modificado após sua criação. O que se pode fazer é mover os elementos de um array para outro maior (XGH).
+    }
+
+    List - Aula 64{
+        'generics' representa uma estrutura de dados que consegue lidar com diversos tipos de dados diferentes, mas apenas um tipo de dados por instância (mas o recomendado é trabalhr com uma lista homogenea). As listas são generics, pois é possivel criar listas de diversos tipos de dados.
+
+        Uma lista também é uma estrutura inexada.
+
+        Explorar a API do List. ctrl + Click na palavra reservada List.
+    }
+
+    ArrayList{
+        É uma estrutura de dados que consegue lidar com diversos tipos de dados diferentes ao mesmo tempo, por instância.
+    }
+
+	Set{
+		O Set é uma estrutura NÃO indexada. Diferentemente de uma lista um Set não aceita repetição de dados, logo não é possível inserir o mesmo item duas vezes.
+	}
+
+	Queue(Fila){
+		Queue significa fila. A fila usa um conceito de First In First Out - FIFO. Se não usar generics para criar a fila, ela ser´uam fila heterogênia, aceitando tipos de dados diferentes.
+	}
+
+    Igualdade - Aula 68{
+        Para verificar se um objeto é igual ao outro, comparando endereços de memoria. o metodo .Equals() compara os endereços de meoria, mas este metodo pode ser sobrecarregado para dizer se o conteudo de um objeto é igual ao conteudo do outro objeto. Deve se sobrecarregar o GetHashCode também, para realizar Equals mais rapidos. veja, (ctrl + ponto_final) e a classe Produto no arquivo ListaColecao para entender melhor.
+    }
+
+    Stack(Pilha){
+        Fiz varios exemplos de uso.
+
+        OK;
+    }
+
+    Dicionarios - Aula 70{
+        É uma estrutura do tipo, Chave -> Valor, similar ao Mapa do Java.
+
+        Um dicionario aceita repeticao no valor, mas não na chave.
+    }
+
+    Orientação a objetos{
+        
+    }
+
+
 
 }
