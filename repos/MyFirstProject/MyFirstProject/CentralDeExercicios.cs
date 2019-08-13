@@ -7,7 +7,7 @@ namespace CursoCSharp {
         Dictionary<string, Action> Exercicios;
 
         public CentralDeExercicios(Dictionary<string, Action> exercicios) {
-            Exercicios = exercicios;    
+            Exercicios = exercicios;
         }
 
         public void SelecionarEExecutar() {
@@ -27,10 +27,10 @@ namespace CursoCSharp {
             string nomeDoExercicio = Exercicios.ElementAt(num).Key;
 
             Console.Write("\nExecutando exercício ");
-            Console.BackgroundColor = ConsoleColor.Yellow;
-            Console.ForegroundColor = ConsoleColor.Black;
+            //Console.BackgroundColor = ConsoleColor.Yellow;
+            //Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine(nomeDoExercicio);
-            Console.ResetColor();
+            //Console.ResetColor();
 
             Console.WriteLine(String.Concat(
                 Enumerable.Repeat("=", nomeDoExercicio.Length + 21)) + "\n");

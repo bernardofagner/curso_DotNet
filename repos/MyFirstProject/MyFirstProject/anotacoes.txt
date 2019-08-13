@@ -1,5 +1,3 @@
-Parei na aula 17 do curso
-
 Conceitos {
     MVP = Fusca -> Uno -> Corolla -> BMW.
 
@@ -11,6 +9,8 @@ Conceitos {
 
     CLR: Common Lenguage Runtime{
         Converte o código em C# para codigo e máquina para ser lido em Windows, Linux ou MAC (Like a virtual machine)
+
+        Ok;
     }
 
     LIB: Bibliotecas
@@ -501,8 +501,25 @@ Visual Studio - C#{
         Ex.: interface Animal{/* Implementacao */}
 
         Por padrao, os metodos de uma interface sao publicos 'public'.
-
-
     }
 
+    Classes e metodos Sealed{
+        Uma classe selada 'sealed' proibe qualquer tipo de herança se marcada com essa palavra reservada.
+
+        Metodos selados nao podem ser sobrescritos 'override'.
+    }
+
+    Programacao Funcional{
+        Expressao Lambda{
+            Fiz exercicios.
+
+            Ok;
+        }
+
+        Lambda com Delegate{
+            Significa efinir um tipo que armazena a assinatura de uma funcao. O delegate pode ser declarado tanto dentro como fora da classe.
+
+            Assistir de novo p entender qual o melhor contexto usar isso.
+        }
+    }
 }
