@@ -1,0 +1,9 @@
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\bin\Debug\netstandard2.0\Encapsulamento.deps.json
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\bin\Debug\netstandard2.0\Encapsulamento.dll
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\bin\Debug\netstandard2.0\Encapsulamento.pdb
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\obj\Debug\netstandard2.0\Encapsulamento.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\obj\Debug\netstandard2.0\Encapsulamento.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\obj\Debug\netstandard2.0\Encapsulamento.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\obj\Debug\netstandard2.0\Encapsulamento.AssemblyInfo.cs
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\obj\Debug\netstandard2.0\Encapsulamento.dll
+C:\Users\Dell\source\repos\MyFirstProject\Encapsulamento\obj\Debug\netstandard2.0\Encapsulamento.pdb

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using CursoCSharp.Fundamentos; //Importa a pasta Fundamentos
-using CursoCSharp.EstruturaDeControle; //Importa a pasta Estrutura de Controle
+//Importa as pastas com as classes criadas ao longo do curso
+using CursoCSharp.Fundamentos; 
+using CursoCSharp.EstruturaDeControle;
 using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.Colecoes;
+using CursoCSharp.OrientacaoAObjetos;
 
 namespace CursoCSharp {
     class Program {
@@ -52,6 +54,12 @@ namespace CursoCSharp {
                 {"Igualdade - Colecoes", IgualdadeColecao.Executar},
                 {"Stack - Colecoes", StackColecao.Executar},
                 {"Dictionary - Colecoes", DictionaryColecao.Executar},
+
+                //Orientacao a objetos
+                {"Heranca - Orientacao a objetos", Heranca.Executar},
+                {"Construtor This - Orientacao a objetos", ConstrutorThis.Executar},
+                {"Encapsulamento - Orientacao a objetos", OrientacaoAObjetos.Encapsulamento.Executar},
+                {"Classe abstrata - Orientacao a objetos", ClasseAbstrata.Execuatar},
             });
 
             central.SelecionarEExecutar();

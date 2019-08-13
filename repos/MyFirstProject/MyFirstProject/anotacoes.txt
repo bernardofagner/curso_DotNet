@@ -4,12 +4,10 @@ Conceitos {
     MVP = Fusca -> Uno -> Corolla -> BMW.
 
     Estrutura de dados: Formas de representar informações/dados.
-
-    Fim
 }
 
 .Net{
-    é um framework que utiliza a linguagem c# para desenvolvimento backend de sistemas web e mobile. A extensão de um arquivo C# é ".cs". Caa sentença de código em C# termina com ";".
+    é um framework que utiliza a linguagem c# para desenvolvimento do backend de sistemas web e mobile. A extensão de um arquivo C# é ".cs". Caa sentença de código em C# termina com ";".
 
     CLR: Common Lenguage Runtime{
         Converte o código em C# para codigo e máquina para ser lido em Windows, Linux ou MAC (Like a virtual machine)
@@ -32,7 +30,9 @@ Visual Studio - C#{
 
 	    Para executar o programa clique no botão de "Play" da IDE, ou use o atalho ctrl+F5;
 
-        ctrl + ponto_final abre um menu de atalos para gerar construtores e outras coisas.
+        ctrl + ponto_final abre um menu de atalos para gerar construtores e outras coisas;
+
+        ctrl + k + c comenta em bloco;
 	}    
 
     Comentário{
@@ -42,11 +42,11 @@ Visual Studio - C#{
 
     Variaveis{
 
-    	C# é uma inguagem fortemente tipada.
-
-    	'const' é uma palavra reservada que indica que a variável (espaço de memória) não pode ser modificada ao durante a execuçaõ do programa. A variável deve ser inicializada logo na sua declaração, pois seu valor é resolvido em tempo de compilação.
-
     	Declaração de variaveis{
+            C# é uma inguagem fortemente tipada.
+
+            'const' é uma palavra reservada que indica que a variável (espaço de memória) não pode ser modificada ao durante a execuçaõ do programa. A variável deve ser inicializada logo na sua declaração, pois seu valor é resolvido em tempo de compilação.
+
     		Modelo: tipo var_nome = valor;
     		double peso = 4.0;
     		const double PI = 3.1415;
@@ -175,7 +175,7 @@ Visual Studio - C#{
     	Proposicoes iguais geram resultado falsos. Ex.: V^V = F.
     }
 
-    Oeradores de atribuicao{
+    Operadores de atribuicao{
         a = b;
         a += b;
         a -= b;
@@ -268,19 +268,19 @@ Visual Studio - C#{
         Se nenhum construtor for criado, o objeto será instanciado usando o construtor padrao
     }
 
-    funcao{
+    Funcao{
         igualzinho em C++.
 
         OK;
     }
 
-    método{
+    Método{
         É uma função pertencente a uma classe.
 
         A assinatura de um metodo deve ser única para cada metodo. Logo, não podem haver dois ou mais métodos com o mesmo nome e com parâmetros identicos.
     }
 
-    metodos estaticos{
+    Métodos estaticos{
         Metodos estaticos possuem a palavra reservada 'static'.
 
         Um método estatico é aquele que pode ser utilizado sem a necessidade da existência de um objeto. Ou seja, o método passa a ser um método associado à classe e não mais À instancia de um objeto daquela classe.
@@ -358,10 +358,14 @@ Visual Studio - C#{
 
     Coleções - Aula 63{
         São estruturas de dados capazes de armazenar diversas instancias de um (ou mais) tipo de dados.
+
+        Ok
     }
 
     Arrays - Aula 63{
         Estrutura indexada, a partir do indice 0 e homogênia e, logo não é possivel misturar mais de um tipo de dado em um array. Um array não pode ter seu tamanho modificado após sua criação. O que se pode fazer é mover os elementos de um array para outro maior (XGH).
+
+        OK
     }
 
     List - Aula 64{
@@ -374,18 +378,26 @@ Visual Studio - C#{
 
     ArrayList{
         É uma estrutura de dados que consegue lidar com diversos tipos de dados diferentes ao mesmo tempo, por instância.
+
+        OK
     }
 
 	Set{
 		O Set é uma estrutura NÃO indexada. Diferentemente de uma lista um Set não aceita repetição de dados, logo não é possível inserir o mesmo item duas vezes.
+
+        Ok;
 	}
 
 	Queue(Fila){
 		Queue significa fila. A fila usa um conceito de First In First Out - FIFO. Se não usar generics para criar a fila, ela ser´uam fila heterogênia, aceitando tipos de dados diferentes.
+
+        Ok;.
 	}
 
     Igualdade - Aula 68{
         Para verificar se um objeto é igual ao outro, comparando endereços de memoria. o metodo .Equals() compara os endereços de meoria, mas este metodo pode ser sobrecarregado para dizer se o conteudo de um objeto é igual ao conteudo do outro objeto. Deve se sobrecarregar o GetHashCode também, para realizar Equals mais rapidos. veja, (ctrl + ponto_final) e a classe Produto no arquivo ListaColecao para entender melhor.
+
+        Ok;
     }
 
     Stack(Pilha){
@@ -400,10 +412,78 @@ Visual Studio - C#{
         Um dicionario aceita repeticao no valor, mas não na chave.
     }
 
-    Orientação a objetos{
-        
+    Pilares da Orientação a Objetos{
+        Abstração: Criar uma representação lógica de um objto do mundo real;
+
+        Herança vs Composicao: É um, ou TEM UM.
+
+        Herança: Capacidade de uma classe obter caracteristicas (atributos e metodos) de uma outra classe e somar às suas proprias características. Evita a copia de codigo;
+
+        Composicao: Capacidade d uma classe possui atributos que são tipos definidos por classes, e não tipos primitovos.
+
+        Quando uma classe é uma especialização de outra, usa-se o É UM (Herança). Ex.: Um Cachorro É UM Animal.
+
+        Quando uma classe precisa de elementos de outra classe, tem-se uma composicao TEM UM (Composicao). Ex.: Um Corpo Tem UM Coração.
     }
 
+    Encapsulamento{
+        Capacidade de ocultar informacoes importantes/sensiveis da sua classe (ou estrutura de dados), gerando maior segurança no seu algoritmo.
 
+        Sobre visibilidade de atributos{
+            public: Atributos/metodos com esta classificação estão visiveis em qualquer parte do sistema.
+
+            internal: Visivel apenas para aqueles que estão dentro do projeto.
+
+            protected: É um nivel de proteção que é transmitido por herança. O atributo/metodo é acessado apenas pela classe que o gerou e pelas classes que o herdarem.
+
+            private: Representa atributos/metodos visiveis apenas dentro da classe em que foi definido e nao pode ser acessado por outras classes. Logo, não é transitido nem por herança.
+
+            Dica: Sempre restrinja, e remova as restricoes na medida que for necessario.
+
+            Mantenha o baixo acoplamento e a alta modularidade.
+        }        
+    }
+
+    Polimorfismo{
+        Estatico: Sobrecarga de metodos. É imprescindivel que os nomes dos metodos(identificadores) sejam iguais, contuno a lista de parametros deve ser diferente e o tipo de retorno pode se diferente.
+
+        Dinâmico: Quando se instancia um tipo mais especifico e o atribui a um tipo mais generico.
+
+        Suponha uma super classe chamada Carro, e uma subclasse chamada FiatUno que herda de Carro. O polimorfismo dinâmico é obtido da seguinte forma:
+        Carro c1 = new FiatUno(); <- Pois FiatUno é um carro;
+
+        Civic c2 = new Civic();
+        Celta c3 = new Celta();
+
+        c1 = c2; <- VALIDO, Também é polimorfismo dinamico;
+
+        c2 = c3; <- INVALIDO!!!," Pois um Civic não é um Celta;
+
+        O metodo abaixo consegue lidar com qualquer tipo de carro graças ao polimorfismo dinâmico. Do contrário deveria-se criar um metodo VenderCarro() para cada tipo de carro diferente.
+
+        public void VenderCarro(Carro x){
+        /*implementacao*/
+        }
+    }
+
+    Herança - Aplicacao{
+        Fiz os exercicios.
+        OK;
+    }
+
+    Construtor usando o this - Aula 77{
+        Fiz exercicios. Ver novamente
+
+        OK;
+    }
+
+    Encapsulamento - Aula 79{
+        Fiz exercicios.
+        OK;
+    }
+
+    Classes Abstratas{
+        Em uma classe abstrata é similar a uma classe concreta em todos os aspectos. Contudo, se usar a palavra resercada 'abstract' a classe concreta se torna uma classe abstrata.
+    }
 
 }

@@ -9,3 +9,6 @@ C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\bin\Debug\netcoreapp2.2
 C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\CursoCSharp.dll
 C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\CursoCSharp.pdb
 C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\CursoCSharp.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\bin\Debug\netcoreapp2.2\Encapsulamento.dll
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\bin\Debug\netcoreapp2.2\Encapsulamento.pdb
+C:\Users\Dell\source\repos\MyFirstProject\MyFirstProject\obj\Debug\netcoreapp2.2\CursoCSharp.csproj.CopyComplete
