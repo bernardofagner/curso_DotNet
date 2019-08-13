@@ -9,6 +9,7 @@ using CursoCSharp.Colecoes;
 using CursoCSharp.OrientacaoAObjetos;
 using CursoCSharp.MetodosEFuncoes;
 using CursoCSharp.Excecoes;
+using CursoCSharp.API;
 
 namespace CursoCSharp {
     class Program {
@@ -72,6 +73,9 @@ namespace CursoCSharp {
                 //Erros e tratamento de excecoes
                 {"Primeira excecao - Tratamento de erros e excecoes", PrimeiraExcecao.Executar},
                 {"Excecoes personalizadas - Tratamento de erros e excecoes", ExcecoesPersonalizadas.Executar},
+
+                //API
+                {"Primeiro arquivo - API", PrimeiroArquivo.Executar},
             });
 
             central.SelecionarEExecutar();

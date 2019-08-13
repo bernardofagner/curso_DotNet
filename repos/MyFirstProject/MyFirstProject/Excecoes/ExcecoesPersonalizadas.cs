@@ -41,7 +41,7 @@ namespace CursoCSharp.Excecoes {
         public static void Executar() {
             Console.WriteLine("Excecoes personalizadas\n");
             try {
-                Console.WriteLine(GeraPositivoPar());
+                Console.WriteLine("Valor gerado: " + GeraPositivoPar());
             }catch(NegativeException e) {
                 Console.WriteLine("Excecao de " + e.Message);
                 //Gera log do erro eh melhor q mandar msg p o usuario
