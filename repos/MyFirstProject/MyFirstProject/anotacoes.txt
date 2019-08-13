@@ -519,7 +519,40 @@ Visual Studio - C#{
         Lambda com Delegate{
             Significa efinir um tipo que armazena a assinatura de uma funcao. O delegate pode ser declarado tanto dentro como fora da classe.
 
-            Assistir de novo p entender qual o melhor contexto usar isso.
+            Assistir de novo p entender qual o melhor contexto usar isso. A única regra é que o tipo de retorno e os parâmetros sejam do mesmo tipo.
         }
+
+        Funcoes Anonimas{
+            Assistir de novo p fixar. Não pratiquei.
+
+            OK;
+        }
+
+        Delegate como parametro - Aula 87{
+            Assisti, mas não implementei nada. Já vi isso em funcional e em engenharia 1. Mas eh melhor voltar aqui de novo;
+
+            OK;
+        }
+    }
+
+    Tratamento de Erros e Excessoes - Aula 89{
+        Exceções são erros que ocorrem  durante a execucao de um programa. O tratamento de exceções consistem em tratar os erros que possam ocorrer no programa evitando sua propagação. Usa-se a palava reservada 'throw' para lançar uma exceção e a palavra reservada 'catch' para capturar o erro e trata-lo. O C# trabalha com exceções não checadas, ou seja, você nao é obrigado a tratar uma exceção lançada por um metodo (Difrente do Java).
+
+        Uma operacao que pode gerar um erro deve ser usada dentro de um bloc try{}, caso o erro ocorra, deve-se captura-lo usando o bloco catch{}. a proxima clausula se chama finaly{} e o que esta contido nela eh executado com a ocorrencia, ou sem a ocorrencia do erro.
+
+        Ex.:
+        try{
+            /*implementacao*/
+        }catch(Exception e){
+            /*captura o erro*/
+        }finaly{
+            /*continuacao*/
+        }
+    }
+
+    Excecoes personalizadas{
+        Usar mais de um bloco catch em um mesmo bloco try.
+
+        Ok;
     }
 }
