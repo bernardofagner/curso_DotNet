@@ -60,6 +60,7 @@ namespace CursoCSharp {
                 {"Construtor This - Orientacao a objetos", ConstrutorThis.Executar},
                 {"Encapsulamento - Orientacao a objetos", OrientacaoAObjetos.Encapsulamento.Executar},
                 {"Classe abstrata - Orientacao a objetos", ClasseAbstrata.Execuatar},
+                {"Interface - Orientacao a objetos", Interface.Executar},
             });
 
             central.SelecionarEExecutar();

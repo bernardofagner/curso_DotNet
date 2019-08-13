@@ -484,6 +484,25 @@ Visual Studio - C#{
 
     Classes Abstratas{
         Em uma classe abstrata é similar a uma classe concreta em todos os aspectos. Contudo, se usar a palavra resercada 'abstract' a classe concreta se torna uma classe abstrata.
+
+        Uma classe abstrata não pode ser instanciada mais. Apenas classes concretas podem ser instanciadas.
+
+        A classe abstrata é usada para ser uma superclasse de alguma outra classe que herde dela. Como por exemplo, a classe Animal pode ser uma classe abstrata.e uma classe Cachorro, seria uma classe concreta que herda da classe Animal.
+
+        Uma classe abstrata pode, ou não, ter metodos abstratos. Um metodo abstrato é um metodo sem corpo que deve ser implementado obrigatoriamente por qualquer classe que herda dessa classe abstrata.
+        Ex.: public abstract void FazAlgo();
+    }
+
+    Interfaces{
+        É um tipo de classe em que todos os metodos sao abstratos. É possivel que uma classe concreta implemente diversas interfaces (similar à herança multipla).
+
+        Uma classe abstrata utiliza a palavra reservada 'interface' no lugar da palavra reservada 'class' na criação da classe.
+
+        Ex.: interface Animal{/* Implementacao */}
+
+        Por padrao, os metodos de uma interface sao publicos 'public'.
+
+
     }
 
 }
