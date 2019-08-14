@@ -561,4 +561,20 @@ Visual Studio - C#{
 
         Ok;
     }
+
+    Diretorios - Aula 94 e 95{
+        So assisti. Tenho q praticar a aula 95.
+
+        Ok;
+    }
+
+    DateTime{
+        Pratiquei.
+
+        OK;
+    }
+
+    Linq - Lenguage Integrated Quere{
+        Uma linguagem de consulta integrada. Como se você estivesse programando em SQL.
+    }
 }

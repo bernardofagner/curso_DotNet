@@ -10,6 +10,7 @@ using CursoCSharp.OrientacaoAObjetos;
 using CursoCSharp.MetodosEFuncoes;
 using CursoCSharp.Excecoes;
 using CursoCSharp.API;
+using CursoCSharp.TopicosAvancados;
 
 namespace CursoCSharp {
     class Program {
@@ -79,6 +80,11 @@ namespace CursoCSharp {
                 {"Lendo Arquivos - API", LendoArquivos.Executar},
                 {"Informacoes arquivo - API", InformacoesArquivo.Executar},
                 {"Diretorios - API", Diretorios.Executar},
+                {"Datas - API", Data.Executar},
+                {"Time span - API", TimeSpanExemplos.Executar},
+
+                //Topicos avancados
+                {"Link - Topicos Avancados", Linq.Executar},
             });
 
             central.SelecionarEExecutar();
