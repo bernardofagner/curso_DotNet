@@ -576,5 +576,13 @@ Visual Studio - C#{
 
     Linq - Lenguage Integrated Quere{
         Uma linguagem de consulta integrada. Como se você estivesse programando em SQL.
+
+        Utiliza expressões lambda (arrow functions) para realizar filtros nas pesquisas.
+    }
+
+    Nullable - Aula 101{
+        Gera a possibilidade  de uma variavel ter um valor nullable, alem dos valores verdadeiro ou falso, ou ja definidos para valores numericos.
+
+
     }
 }

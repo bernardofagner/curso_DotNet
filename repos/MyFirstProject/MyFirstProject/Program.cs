@@ -84,7 +84,8 @@ namespace CursoCSharp {
                 {"Time span - API", TimeSpanExemplos.Executar},
 
                 //Topicos avancados
-                {"Link - Topicos Avancados", Linq.Executar},
+                {"Linq_1 - Topicos Avancados", Linq_1.Executar},
+                {"Linq_2 - Topicos Avancados", Linq_2.Executar},
             });
 
             central.SelecionarEExecutar();
