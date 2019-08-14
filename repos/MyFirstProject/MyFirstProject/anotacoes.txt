@@ -556,5 +556,9 @@ Visual Studio - C#{
         Ok;
     }
 
-    Parei na aula 91.
+    Escrita e leitura de arquivos{
+        Implementei exemplos
+
+        Ok;
+    }
 }
